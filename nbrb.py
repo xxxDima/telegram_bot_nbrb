@@ -9,7 +9,7 @@ def curse_per_week():
     x = []
     y = []
     y_usd = []
-    data_days = -31
+    data_days = -29
 
     for i in range(data_days, 2):
         data = str(date.today() + timedelta(i))  # дата за неделю + 1 день
@@ -53,7 +53,7 @@ def curse_per_week():
     eur.grid()
     usd.grid()
     plt.suptitle('Курсы валют EUR и USD по отношению к BYN')
-    plt.savefig('График.png')
+    plt.savefig('Schedule.png')
     # plt.show()
 
 

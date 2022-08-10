@@ -105,9 +105,10 @@ def answer(users_id):
     """
     функция отправляет сообщение от бота с графиком курса валют в л/с юзера
     """
+    nbrb.curse_per_week()
     for user in users_id:
-        nbrb.curse_per_week()
-        photo = open('C:\\Users\\USER\\PycharmProjects\\pythonProject1\\График.png', 'rb')
+        photo = open('.\Schedule.png', 'rb')
+        print(user)
         bot.send_photo(user, photo)
 
 
